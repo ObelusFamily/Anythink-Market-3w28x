@@ -10,4 +10,16 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+Install docker tools.
+- [Install Docker Desktop](https://docs.docker.com/get-docker/)
+- Install OS package
+   - docker engine from Ubuntu seems compatible
+   - docker-compose is NOT compatible
+      - Download binary from [Compose Releases](https://github.com/docker/compose/releases)
+      - Copy binary to ~/.docker/cli-plugins
+      - Rename to docker-compose
+      - Run ```sudo chmod +x docker-compose``` to make binary executable
+      - Create alias
+         - If alias file does not exist, create ```~/.bash_alias```
+         - Add ```alias docker-compose='$HOME/.docker/cli-plugins/docker-compose'
+
